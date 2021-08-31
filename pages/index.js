@@ -6,6 +6,7 @@ import React, {useState, useEffect} from 'react'
 export default function Home(props) {
 
   const {JAMIEPCRIG, BERTSPC, PROJECTC, data} = props
+  console.log(data);
 
   useEffect(() => {
     setMinerHardwareStatus()
@@ -34,7 +35,6 @@ export default function Home(props) {
   }
 
 
-  console.log(setMinerHardwareStatus());
   return (
     <div>
       <Head>

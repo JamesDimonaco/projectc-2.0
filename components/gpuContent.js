@@ -15,7 +15,6 @@ function classNames(...classes) {
 
 export default function GPUContent({rig}) {
   const [selected, setSelected] = useState(plans[0])
-  console.log(rig.BERTSPC);
 
   return (
     <RadioGroup value={selected} onChange={setSelected}>
