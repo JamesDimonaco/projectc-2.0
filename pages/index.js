@@ -21,12 +21,12 @@ export default function Home(props) {
       offlineHardwareData.push({PROJECTC : 'offline', ...PROJECTC.info})
     }
     if (BERTSPC.info.status === 'online'){
-      onlineHardwareData.push(BERTSPC.hardware)
+      onlineHardwareData.push(...BERTSPC.hardware)
     }else {
       offlineHardwareData.push({BERTSPC : 'offline', ...BERTSPC.info})
     }
     if (JAMIEPCRIG.info.status === 'online'){
-      onlineHardwareData.push(JAMIEPCRIG.hardware)
+      onlineHardwareData.push(...JAMIEPCRIG.hardware)
     }else {
       offlineHardwareData.push({JAMIEPCRIG : 'offline', ...JAMIEPCRIG.info})
     }
